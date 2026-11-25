@@ -120,3 +120,12 @@ The **Source free dish photos** GitHub Actions run has a **Summary** tab with th
 - Visible menu entries after hiding no-match dishes
 
 Dishes marked `no-match` are hidden from the customer-facing category picker, menu results and Olive recommendations. Their records remain in `menu-data.js` with their IDs and `no-match` status, so they can be retried later by enabling the workflow's `retry_no_match` option. When a matching photo is found, the dish automatically returns to the visible menu.
+
+
+## Olive AI food guide troubleshooting
+
+Olive uses the Vercel serverless endpoint `api/chat.js` and Google Gemini. The Gemini API key must be configured only as the Vercel environment variable `GEMINI_API_KEY` for the Production environment. Do not add the key to this repository or any browser JavaScript. The default model is `gemini-3.5-flash-lite`; an optional `GEMINI_MODEL` variable can override it. Remove that override if an unavailable model was configured.
+
+The endpoint supports `GET /api/chat` as a safe health check. It returns whether the server is deployed and whether the Gemini key is configured, without returning the key. Open `https://restaurant-website.vercel.app/api/chat` in a browser to check it. Expected healthy response has `configured: true`. A `configured: false` result means the Vercel key still needs to be added and the project redeployed.
+
+On the GitHub Pages site, the browser calls `https://restaurant-website.vercel.app/api/chat`. If the actual Vercel project uses a different production domain, set `window.RESTAURANT_CHAT_ENDPOINT` in a small deployment config script to that project's `/api/chat` URL. The chat panel reports connection and API errors instead of hiding every failure behind a generic message.

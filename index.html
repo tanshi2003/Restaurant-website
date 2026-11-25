@@ -47,6 +47,9 @@
 @media(max-width:850px){.nav{padding:0 4vw}.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:45px}.heroimg{height:390px;grid-row:1}.stamp{left:10px}.menu-grid{grid-template-columns:repeat(2,1fr)}.story{grid-template-columns:1fr;padding:25px}.benefits{grid-template-columns:1fr}.section{padding:55px 5vw}}
 @media(max-width:550px){.nav{height:67px}.brand{font-size:21px}.pill{display:none}.hero{padding:35px 5vw 48px;gap:30px}.hero h1{font-size:52px}.heroimg{height:320px}.sectionhead{display:block}.menu-grid{grid-template-columns:1fr}.dishimg{height:230px}.storyimg{height:250px}.footer{display:block}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.chatfab{right:15px;bottom:15px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+.chathead small{cursor:pointer;opacity:.9}.chathead small[data-state='online']{color:#d8f2d7}.chathead small[data-state='setup']{color:#ffe4ae}.chathead small[data-state='offline']{color:#ffd0c9}
+.bubble.error{background:#fff1ee;border:1px solid #f0c8bf;color:#873d31;max-width:95%}
+.chatinput button:disabled,.quick button:disabled{opacity:.5;cursor:wait}
 </style>
 </head>
 <body>
@@ -86,7 +89,7 @@
 </div>
 <div class="drawerback" id="drawerBack"><aside class="drawer"><div class="drawertop"><h3>Your bag</h3><button class="iconbtn" id="closeCart">✕</button></div><div class="cartitems" id="cartItems"></div><div class="total"><div class="totalline"><span>Subtotal</span><b id="subtotal">₹0</b></div><div class="totalline"><span>Delivery</span><b id="delivery">₹0</b></div><div class="totalline" style="font-size:16px"><b>Total</b><b id="grandTotal">₹0</b></div><button class="primary checkout" id="checkoutBtn">Continue to checkout →</button></div></aside></div>
 <div class="modal" id="checkoutModal"><div class="modalbox"><div style="display:flex;justify-content:space-between"><div><div class="eyebrow">Almost there</div><h3>Your details</h3><p>This demo checkout creates an order summary. No payment is collected.</p></div><button class="iconbtn" id="closeCheckout">✕</button></div><form id="checkoutForm"><div class="formgrid"><div class="field"><label>Full name</label><input name="name" required placeholder="Your name"></div><div class="field"><label>Phone number</label><input name="phone" required type="tel" pattern="[0-9+ -]{8,15}" placeholder="+91"></div><div class="field full"><label>Delivery address</label><textarea name="address" required rows="2" placeholder="House, street, area, landmark"></textarea></div><div class="field full"><label>Payment method</label><select name="payment" id="paymentMethod"><option value="upi">UPI / QR payment</option><option value="cod">Cash on delivery</option></select></div><div class="field full" id="upiNote"><div style="background:#eef4ec;border:1px solid #dce8d7;border-radius:10px;padding:12px;font-size:11px;line-height:1.6;color:#315b42"><b>UPI selected</b><br>UPI is shown as a checkout option in this preview. Live payment requires the restaurant’s verified merchant UPI ID or a payment gateway. No money is collected in this demo.</div></div></div><button class="primary checkout" type="submit">Place demo order</button></form></div></div>
-<button class="chatfab" id="chatFab">✳ Ask our food guide</button><section class="chatbox" id="chatBox"><div class="chathead"><div><strong>Meet Olive 🌿</strong><small>Your friendly food guide · here to help</small></div><button id="closeChat" class="iconbtn" style="background:#ffffff25;color:white">✕</button></div><div class="chatmessages" id="chatMessages"><div class="bubble">Hey, I'm Olive 🌿 Your AI food guide. Ask me about dishes, ingredients, flavours, cuisines, veg options or what to order.</div></div><div class="quick"><button data-q="What are your best Indian dishes?">Indian favourites 🇮🇳</button><button data-q="Suggest vegetarian food under ₹300">Veg under ₹300 🥬</button><button data-q="Explain the sushi options">Sushi guide 🍣</button><button data-q="I want something spicy and filling">Spicy & filling 🌶️</button></div><form class="chatinput" id="chatForm"><input id="chatInput" placeholder="Tell me what you fancy…" autocomplete="off"><button aria-label="Send">↑</button></form></section><div class="toast" id="toast"></div>
+<button class="chatfab" id="chatFab">✳ Ask our food guide</button><section class="chatbox" id="chatBox"><div class="chathead"><div><strong>Meet Olive 🌿</strong><small id="chatStatus">Connecting to Olive…</small></div><button id="closeChat" class="iconbtn" style="background:#ffffff25;color:white">✕</button></div><div class="chatmessages" id="chatMessages"><div class="bubble">Hey, I'm Olive 🌿 Your AI food guide. Ask me about dishes, ingredients, flavours, cuisines, veg options or what to order.</div></div><div class="quick"><button data-q="What are your best Indian dishes?">Indian favourites 🇮🇳</button><button data-q="Suggest vegetarian food under ₹300">Veg under ₹300 🥬</button><button data-q="Explain the sushi options">Sushi guide 🍣</button><button data-q="I want something spicy and filling">Spicy & filling 🌶️</button></div><form class="chatinput" id="chatForm"><input id="chatInput" placeholder="Tell me what you fancy…" autocomplete="off"><button aria-label="Send">↑</button></form></section><div class="toast" id="toast"></div>
 <script src="menu-data.js"></script>
 <script>
 const dishes = window.MENU_ITEMS || [];
@@ -148,36 +151,82 @@ document.getElementById("checkoutBtn").onclick=()=>{if(Object.keys(cart).length)
 document.getElementById("checkoutForm").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target),order=Object.entries(cart).map(([id,q])=>q+" × "+dishes.find(d=>d.id==id).name).join(", "),payment=f.get("payment")==="upi"?"UPI / QR selected (demo only, no payment collected)":"Cash on delivery (demo only)";alert("Thanks, "+f.get("name")+"!\nOrder: "+order+"\nPayment: "+payment+"\nDelivery address: "+f.get("address")+"\nThis preview does not send orders to a restaurant or process payments.");cart={};updateCart();e.target.reset();document.getElementById("upiNote").hidden=false;document.getElementById("checkoutModal").classList.remove("open");back.classList.remove("open")};
 const chat=document.getElementById("chatBox"),msgs=document.getElementById("chatMessages");
 const chatHistory=[];
-const CHAT_API_URL=window.RESTAURANT_CHAT_ENDPOINT||(location.hostname.endsWith("github.io")?"https://restaurant-website.vercel.app/api/chat":"/api/chat");
-document.getElementById("chatFab").onclick=()=>chat.classList.toggle("open");
-document.getElementById("closeChat").onclick=()=>chat.classList.remove("open");
+let chatSending=false,chatHealthChecked=false;
+const chatStatus=document.getElementById("chatStatus");
+function setChatStatus(label,state){if(chatStatus){chatStatus.textContent=label;chatStatus.dataset.state=state||""}}
+async function checkOliveHealth(force=false){
+ if(chatHealthChecked&&!force)return;
+ setChatStatus("Checking Olive’s connection…","checking");
+ try{
+  const response=await fetch(CHAT_API_URL,{method:"GET",headers:{Accept:"application/json"},cache:"no-store"});
+  const data=await response.json().catch(()=>({}));
+  if(!response.ok)throw new Error(data.error||"Olive’s server returned HTTP "+response.status);
+  if(data.configured){setChatStatus("AI food guide · online","online");}
+  else{setChatStatus("AI setup needed · server is reachable","setup");}
+ }catch(error){
+  setChatStatus("AI connection unavailable · tap to retry","offline");
+ }finally{chatHealthChecked=true}
+}
+function openOlive(){chat.classList.add("open");checkOliveHealth()}
+function closeOlive(){chat.classList.remove("open")}
+document.getElementById("chatFab").onclick=()=>chat.classList.contains("open")?closeOlive():openOlive();
+document.getElementById("closeChat").onclick=closeOlive;
+if(chatStatus)chatStatus.addEventListener("click",()=>checkOliveHealth(true));
 function bubble(txt,who){let el=document.createElement("div");el.className="bubble "+(who||"");el.textContent=txt;msgs.appendChild(el);msgs.scrollTop=msgs.scrollHeight;return el}
 function menuContextFor(question){
  const recent=chatHistory.slice(-5).map(m=>m.text).join(" ")+" "+question;
- const terms=(recent.toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>w.length>2&&!["the","and","for","with","what","which","that","this","you","can","are","have","from","want","some","please","tell","about","more"].includes(w));
- const scored=dishes.filter(d=>d.imageStatus!=="no-match").map(d=>{const hay=(d.name+" "+d.cat+" "+d.section+" "+d.subcategory+" "+d.keywords).toLowerCase();let score=0;for(const term of terms){if(hay.includes(term))score+=term.length>4?3:1}if(/\b(non.?veg|chicken|fish|seafood|prawn|egg)\b/i.test(recent)&&d.diet==="nonveg")score+=2;if(/\b(veg|vegetarian|vegan)\b/i.test(recent)&&d.diet==="veg")score+=2;return {d,score}}).sort((a,b)=>b.score-a.score);
+ const terms=(recent.toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>w.length>2&& !["the","and","for","with","what","which","that","this","you","can","are","have","from","want","some","please","tell","about","more"].includes(w));
+ const available=dishes.filter(d=>d.imageStatus!=="no-match");
+ const scored=available.map(d=>{const hay=(d.name+" "+d.cat+" "+d.section+" "+d.subcategory+" "+d.keywords).toLowerCase();let score=0;for(const term of terms){if(hay.includes(term))score+=term.length>4?3:1}if(/\b(non.?veg|chicken|fish|seafood|prawn|egg)\b/i.test(recent)&&d.diet==="nonveg")score+=2;if(/\b(veg|vegetarian|vegan)\b/i.test(recent)&&d.diet==="veg")score+=2;return {d,score}}).sort((a,b)=>b.score-a.score);
  let chosen=scored.filter(x=>x.score>0).slice(0,30).map(x=>x.d);
- if(chosen.length<12){const seenGroups=new Set(chosen.map(d=>d.cat));for(const d of dishes){if(chosen.length>=24)break;if(!chosen.some(x=>x.id===d.id)&&(!seenGroups.has(d.cat)||chosen.length<12)){chosen.push(d);seenGroups.add(d.cat)}}}
+ if(chosen.length<12){const seenGroups=new Set(chosen.map(d=>d.cat));for(const d of available){if(chosen.length>=24)break;if(!chosen.some(x=>x.id===d.id)&&(!seenGroups.has(d.cat)||chosen.length<12)){chosen.push(d);seenGroups.add(d.cat)}}}
  return chosen.slice(0,30).map(d=>({name:d.name,category:d.cat,section:d.section,subcategory:d.subcategory,price:d.price,diet:d.diet,description:d.desc}));
 }
-async function sendChat(text){
- const message=text.trim();if(!message)return;
- bubble(message,"user");chatHistory.push({role:"user",text:message});
- const typing=bubble("Olive is thinking…","typing");
- const send=document.querySelector("#chatForm button");if(send)send.disabled=true;
- try{
-  const response=await fetch(CHAT_API_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({history:chatHistory.slice(-10),menuContext:menuContextFor(message)})});
-  const data=await response.json().catch(()=>({}));
-  if(!response.ok)throw new Error(data.error||"Olive could not reach the kitchen right now.");
-  const reply=String(data.reply||"I could not put together an answer just yet. Try asking about a dish or cuisine.").slice(0,1800);
-  typing.remove();bubble(reply);chatHistory.push({role:"model",text:reply});
- }catch(error){
-  typing.remove();const message=String(error.message||"");
-  if(message.includes("GEMINI_API_KEY"))bubble("Olive needs one setup step: add GEMINI_API_KEY to the Vercel project environment variables, then redeploy.");
-  else bubble("I am having trouble reaching my food guide right now. Please try again in a moment.");
- }finally{if(send)send.disabled=false}
+function friendlyOliveError(status,data,error){
+ const code=data&&data.code;
+ if(code==="API_KEY_MISSING")return "Olive’s AI server is deployed, but GEMINI_API_KEY is missing in Vercel. Add it under Project Settings → Environment Variables, then redeploy.";
+ if(code==="API_KEY_REJECTED")return "Google rejected the Gemini API key. Check that GEMINI_API_KEY in Vercel is a valid key created for the Gemini API.";
+ if(code==="MODEL_NOT_FOUND")return "The configured Gemini model was not found. Check GEMINI_MODEL in Vercel or remove it to use the default model.";
+ if(code==="GEMINI_QUOTA")return "Olive has reached the Gemini API quota or rate limit. Check the API usage limits in Google AI Studio and try again later.";
+ if(code==="GEMINI_UPSTREAM")return "Google’s Gemini service is temporarily unavailable. Please try again in a moment.";
+ if(error&&error.name==="AbortError")return "Olive took too long to answer. Please try again.";
+ if(error&&error.name==="TypeError")return "I can’t reach Olive’s AI server. The website is online, but the chat endpoint may be unavailable. Check the Vercel deployment and endpoint URL.";
+ return (data&&data.error)||"Olive couldn’t answer just now. Please try again.";
 }
-document.getElementById("chatForm").onsubmit=e=>{e.preventDefault();let inp=document.getElementById("chatInput");sendChat(inp.value);inp.value=""};
+async function sendChat(text){
+ const message=String(text||"").trim();if(!message||chatSending)return;
+ chatSending=true;
+ bubble(message,"user");
+ const typing=bubble("Olive is thinking…","typing");
+ const input=document.getElementById("chatInput");
+ const send=document.querySelector("#chatForm button");
+ if(send)send.disabled=true;if(input)input.disabled=true;
+ document.querySelectorAll(".quick [data-q]").forEach(b=>b.disabled=true);
+ const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),35000);
+ try{
+  const pendingHistory=[...chatHistory,{role:"user",text:message}].slice(-10);
+  const response=await fetch(CHAT_API_URL,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({history:pendingHistory,menuContext:menuContextFor(message)}),signal:controller.signal});
+  const data=await response.json().catch(()=>({error:"Olive returned an unreadable response."}));
+  if(!response.ok){const error=new Error(data.error||"Olive returned HTTP "+response.status);error.status=response.status;error.payload=data;throw error;}
+  const reply=String(data.reply||"I couldn’t put together an answer just yet. Try asking about a dish or cuisine.").slice(0,1800);
+  typing.remove();bubble(reply,"assistant");
+  chatHistory.push({role:"user",text:message},{role:"model",text:reply});
+  setChatStatus("AI food guide · online","online");chatHealthChecked=true;
+ }catch(error){
+  typing.remove();
+  const payload=error.payload||{};
+  const message=friendlyOliveError(error.status,payload,error);
+  bubble(message,"error");
+  if(error.status===503&&payload.code==="API_KEY_MISSING")setChatStatus("AI setup needed","setup");
+  else if(error.name==="TypeError"||error.name==="AbortError")setChatStatus("AI connection unavailable · tap to retry","offline");
+ }finally{
+  clearTimeout(timeout);chatSending=false;
+  if(send)send.disabled=false;if(input)input.disabled=false;
+  document.querySelectorAll(".quick [data-q]").forEach(b=>b.disabled=false);
+  if(input)input.focus();
+ }
+}
+document.getElementById("chatForm").onsubmit=e=>{e.preventDefault();const inp=document.getElementById("chatInput");const value=inp.value;inp.value="";sendChat(value)};
 document.querySelectorAll("[data-q]").forEach(b=>b.onclick=()=>sendChat(b.dataset.q));
 const observer=new IntersectionObserver(entries=>entries.forEach(x=>{if(x.isIntersecting){x.target.classList.add("visible");observer.unobserve(x.target)}}),{threshold:.12});document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 document.getElementById("paymentMethod").addEventListener("change",e=>{document.getElementById("upiNote").hidden=e.target.value!=="upi"});renderMenu();updateCart();

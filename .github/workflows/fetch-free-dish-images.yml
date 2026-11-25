@@ -1,5 +1,9 @@
 name: Source free dish photos
 on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/fetch-free-dish-images.yml"
   workflow_dispatch:
     inputs:
       limit:

@@ -2,41 +2,11 @@
   {
     "id": 55,
     "name": "Methi Malai Paneer",
-    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:22:23.963Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
+    "error": "Image API returned HTTP 402: {\"success\":false,\"error\":{\"message\":\"Insufficient balance. This request costs about $0.0020, but your available balance is $0.0000. Top up at https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup.\",\"code\":\"INSUFFICIENT_BALANCE\",\"timestamp\":\"2026-11-25T21:37:18.296Z\",\"fixUrl\":\"https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup\"},\"status\":402}"
   },
   {
     "id": 43,
     "name": "Paneer Lababdar",
-    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:22:23.987Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
-  },
-  {
-    "id": 103,
-    "name": "Masala Dosa",
-    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:22:47.145Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
-  },
-  {
-    "id": 106,
-    "name": "Butter Masala Dosa",
-    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:22:47.151Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
-  },
-  {
-    "id": 126,
-    "name": "Mysore Bonda",
-    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:23:10.327Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
-  },
-  {
-    "id": 117,
-    "name": "Schezwan Dosa",
-    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:23:10.336Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
-  },
-  {
-    "id": 132,
-    "name": "Cheese Uttapam",
-    "error": "Image API returned HTTP 402: {\"success\":false,\"error\":{\"message\":\"Insufficient balance. This request costs about $0.0020, but your available balance is $0.0000. Top up at https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup.\",\"code\":\"INSUFFICIENT_BALANCE\",\"timestamp\":\"2026-11-25T21:23:10.735Z\",\"fixUrl\":\"https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup\"},\"status\":402}"
-  },
-  {
-    "id": 133,
-    "name": "Mixed Veg Uttapam",
-    "error": "Image API returned HTTP 402: {\"success\":false,\"error\":{\"message\":\"Insufficient balance. This request costs about $0.0020, but your available balance is $0.0000. Top up at https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup.\",\"code\":\"INSUFFICIENT_BALANCE\",\"timestamp\":\"2026-11-25T21:23:10.821Z\",\"fixUrl\":\"https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup\"},\"status\":402}"
+    "error": "Image API returned HTTP 402: {\"success\":false,\"error\":{\"message\":\"Insufficient balance. This request costs about $0.0020, but your available balance is $0.0000. Top up at https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup.\",\"code\":\"INSUFFICIENT_BALANCE\",\"timestamp\":\"2026-11-25T21:37:18.342Z\",\"fixUrl\":\"https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup\"},\"status\":402}"
   }
 ]

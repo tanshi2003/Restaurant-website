@@ -31,7 +31,8 @@ function slugify(value) {
 }
 function hashNumber(value) {
   const hash = crypto.createHash("sha256").update(String(value)).digest();
-  return hash.readUInt32BE(0);
+  // Pollinations validates seed as a signed 32-bit integer.
+  return hash.readUInt32BE(0) % 2147483647;
 }
 function promptFor(dish, attempt) {
   const name = String(dish.name || "restaurant dish").trim();
@@ -174,7 +175,12 @@ async function main() {
   console.log("Still pending: " + pendingAfter);
   console.log("Failed this run: " + failures.length);
   if (fatalError) console.error("Generation stopped by the provider. Check the key, permissions or spending budget, then rerun; existing images will be skipped.");
-  if (failures.length) await fs.writeFile(path.join(ASSET_DIR, "generation-errors.json"), JSON.stringify(failures, null, 2) + "\n");
+  const errorFile = path.join(ASSET_DIR, "generation-errors.json");
+  if (failures.length) {
+    await fs.writeFile(errorFile, JSON.stringify(failures, null, 2) + "\n");
+  } else {
+    await fs.rm(errorFile, { force: true });
+  }
   if (failures.length || fatalError || (generated === 0 && pendingAfter > 0)) process.exitCode = 1;
 }
 main().catch(error => { console.error(error); process.exit(1); });

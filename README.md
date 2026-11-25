@@ -4,7 +4,7 @@ A modern, light-theme restaurant and premium café ordering experience with a la
 
 ## Menu
 
-The catalogue is generated from the supplied master menu and includes more than 1,000 food and drink entries across 32 collections:
+The catalogue is generated from the supplied master menu and includes more than 1,000 food and drink entries across 32 collections, organised into 17 browseable top-level categories:
 
 - North Indian, paneer specialities, breads, South Indian, regional Indian, street food, kebabs, biryani and rice
 - Chinese and Indo-Chinese, dim sum, Japanese, sushi, Korean and Thai
@@ -15,11 +15,13 @@ The catalogue is generated from the supplied master menu and includes more than 
 - Coffee, tea, cold coffee, frappes, milkshakes, mocktails, juices, lassi, coolers and specialty drinks
 - Extras and add-ons for pizza, burgers, pasta, drinks, sides and dips
 
-The optional alcohol bar menu from the source list is not included.
+The optional alcohol bar menu from the source list is not included. Dish photos use a varied image pool selected by dish name and menu section; the collection is illustrative, not 1,089 individually licensed photos.
 
 ## Features
 
-- Cuisine/category browsing, full menu search and incremental show-more loading
+- Explore Menu opens a category picker; selecting a category jumps to that collection's dishes
+- Dish-aware food photography with multiple image choices matched by dish type
+- Full menu search and incremental show-more loading
 - **All / Veg / Non-veg / Check with kitchen** dietary filter. Items whose names do not establish their ingredients are kept out of the Veg and Non-veg filters until the kitchen confirms them.
 - Shopping bag with quantity controls, subtotal, delivery fee and free-delivery threshold
 - Demo checkout with UPI / QR and cash-on-delivery choices

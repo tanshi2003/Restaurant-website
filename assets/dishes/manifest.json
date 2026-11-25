@@ -1288,7 +1288,25 @@
       "image_url": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4NTU5NjgzLWltYWdlLWt3dnZleDBhLmpwZw.jpg",
       "provider": "rawpixel",
       "attribution": "\"Free chilli chicken dish image\" is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": 159,
+      "name": "Crispy Chicken",
+      "file": "assets/dishes/0159-crispy-chicken.jpg",
+      "sha256": "84eb17b141d1753bf33272b4f4cf6e9f64f1b6701addba6cce184fe5fb51a4ae",
+      "match_score": 1,
+      "openverse_id": "c1ff754e-8158-416c-9374-4c9596b2c449",
+      "title": "Crispy shrimp & birria taco and a crispy chicken taco with salsa",
+      "creator": "sarahstierch",
+      "creator_url": "https://www.flickr.com/photos/7633518@N08",
+      "license": "by",
+      "license_version": "2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_url": "https://www.flickr.com/photos/7633518@N08/53633141550",
+      "image_url": "https://live.staticflickr.com/65535/53633141550_caf98b4034_b.jpg",
+      "provider": "flickr",
+      "attribution": "\"Crispy shrimp & birria taco and a crispy chicken taco with salsa\" by sarahstierch is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/."
     }
   ],
-  "updatedAt": "2026-11-25T22:17:30.487Z"
+  "updatedAt": "2026-11-25T22:18:35.897Z"
 }

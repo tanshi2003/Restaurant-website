@@ -136,3 +136,4 @@ Images are sourced from Openverse. Each entry records the source page and licenc
 - **Crispy Corn** — [Crispy Corn, Shrimp and Zaatar, Croquet and Black Lime Jam](https://www.flickr.com/photos/187878392@N04/53149570271) by yanayrosen; licence [pdm](https://creativecommons.org/publicdomain/mark/1.0/).
 - **Chicken Manchurian** — [Chinese Food - Fried Rice - Chilli Pork - Chicken Manchurian](https://www.flickr.com/photos/156466858@N02/29649755327) by bradjavernick; licence [by](https://creativecommons.org/licenses/by/2.0/).
 - **Chilli Chicken** — [Free chilli chicken dish image](https://www.rawpixel.com/image/5908257/image-public-domain-leaf-food) by Unknown creator; licence [cc0](https://creativecommons.org/publicdomain/zero/1.0/).
+- **Crispy Chicken** — [Crispy shrimp & birria taco and a crispy chicken taco with salsa](https://www.flickr.com/photos/7633518@N08/53633141550) by sarahstierch; licence [by](https://creativecommons.org/licenses/by/2.0/).

@@ -134,3 +134,10 @@ On the GitHub Pages site, the browser calls `https://restaurant-website.vercel.a
 ## Vercel deployment for Olive
 
 The project uses the Vercel **Other** framework preset (explicitly set by the root `vercel.json`). Static files are served from the repository root, and `api/chat.mjs` is deployed as the Node.js Web Handler at `/api/chat`. The chat endpoint supports GET health checks and POST Gemini requests. The Gemini key stays in the Vercel server environment as `GEMINI_API_KEY`.
+
+
+### Current production chat endpoint
+
+The GitHub Pages frontend uses the Vercel Production API endpoint:
+`https://restaurant-website-psi-umber.vercel.app/api/chat`.
+The frontend defines `CHAT_API_URL` and allows an optional `window.RESTAURANT_CHAT_ENDPOINT` override before the inline application script. Keep the API domain aligned with the current Production domain shown in Vercel → Project → Domains.

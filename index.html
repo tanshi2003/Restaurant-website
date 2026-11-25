@@ -92,6 +92,9 @@
 <button class="chatfab" id="chatFab">✳ Ask our food guide</button><section class="chatbox" id="chatBox"><div class="chathead"><div><strong>Meet Olive 🌿</strong><small id="chatStatus">Connecting to Olive…</small></div><button id="closeChat" class="iconbtn" style="background:#ffffff25;color:white">✕</button></div><div class="chatmessages" id="chatMessages"><div class="bubble">Hey, I'm Olive 🌿 Your AI food guide. Ask me about dishes, ingredients, flavours, cuisines, veg options or what to order.</div></div><div class="quick"><button data-q="What are your best Indian dishes?">Indian favourites 🇮🇳</button><button data-q="Suggest vegetarian food under ₹300">Veg under ₹300 🥬</button><button data-q="Explain the sushi options">Sushi guide 🍣</button><button data-q="I want something spicy and filling">Spicy & filling 🌶️</button></div><form class="chatinput" id="chatForm"><input id="chatInput" placeholder="Tell me what you fancy…" autocomplete="off"><button aria-label="Send">↑</button></form></section><div class="toast" id="toast"></div>
 <script src="menu-data.js"></script>
 <script>
+const CHAT_API_URL = window.RESTAURANT_CHAT_ENDPOINT ||
+  "https://restaurant-website-psi-umber.vercel.app/api/chat";
+
 const dishes = window.MENU_ITEMS || [];
 let cart={};let activeCat="All",activeDiet="all",searchQuery="",visibleCount=24;
 const rupee=n=>"₹"+n.toLocaleString("en-IN");

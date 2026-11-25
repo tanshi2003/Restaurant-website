@@ -1252,7 +1252,43 @@
       "image_url": "https://live.staticflickr.com/65535/53149570271_f966eb1127_b.jpg",
       "provider": "flickr",
       "attribution": "\"Crispy Corn, Shrimp and Zaatar, Croquet and Black Lime Jam\" by yanayrosen is marked with Public Domain Mark 1.0. To view the terms, visit https://creativecommons.org/publicdomain/mark/1.0/."
+    },
+    {
+      "id": 155,
+      "name": "Chicken Manchurian",
+      "file": "assets/dishes/0155-chicken-manchurian.jpg",
+      "sha256": "5230521dfda6fc77811c75c7f7b56da738e52d6010cf01c9ebb648a1a15547dc",
+      "match_score": 1,
+      "openverse_id": "c28b2251-eeb0-4962-8c8b-adf1b314c6c3",
+      "title": "Chinese Food - Fried Rice - Chilli Pork - Chicken Manchurian",
+      "creator": "bradjavernick",
+      "creator_url": "https://www.flickr.com/photos/156466858@N02",
+      "license": "by",
+      "license_version": "2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_url": "https://www.flickr.com/photos/156466858@N02/29649755327",
+      "image_url": "https://live.staticflickr.com/1870/29649755327_1c8773a364_b.jpg",
+      "provider": "flickr",
+      "attribution": "\"Chinese Food - Fried Rice - Chilli Pork - Chicken Manchurian\" by bradjavernick is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/."
+    },
+    {
+      "id": 157,
+      "name": "Chilli Chicken",
+      "file": "assets/dishes/0157-chilli-chicken.jpg",
+      "sha256": "fe3e26e1b56f9593a1a1bf7afd77db30deeb15a35f89972fe722650ef0099efa",
+      "match_score": 1,
+      "openverse_id": "af7cbf94-ff33-48d9-aaca-d5a5c627317a",
+      "title": "Free chilli chicken dish image",
+      "creator": "Unknown creator",
+      "creator_url": "",
+      "license": "cc0",
+      "license_version": "1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://www.rawpixel.com/image/5908257/image-public-domain-leaf-food",
+      "image_url": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4NTU5NjgzLWltYWdlLWt3dnZleDBhLmpwZw.jpg",
+      "provider": "rawpixel",
+      "attribution": "\"Free chilli chicken dish image\" is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
     }
   ],
-  "updatedAt": "2026-11-25T22:02:16.960Z"
+  "updatedAt": "2026-11-25T22:17:30.487Z"
 }

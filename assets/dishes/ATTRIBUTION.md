@@ -134,3 +134,5 @@ Images are sourced from Openverse. Each entry records the source page and licenc
 - **Veg Stew** — [veg stew and dumplings](https://www.flickr.com/photos/16176711@N02/54434620236) by conall..; licence [by](https://creativecommons.org/licenses/by/2.0/).
 - **Hyderabadi Chicken** — [Hyderabadi Chicken Biryani 1](https://www.flickr.com/photos/153337965@N04/51617518093) by ravimadhuscooking; licence [by](https://creativecommons.org/licenses/by/2.0/).
 - **Crispy Corn** — [Crispy Corn, Shrimp and Zaatar, Croquet and Black Lime Jam](https://www.flickr.com/photos/187878392@N04/53149570271) by yanayrosen; licence [pdm](https://creativecommons.org/publicdomain/mark/1.0/).
+- **Chicken Manchurian** — [Chinese Food - Fried Rice - Chilli Pork - Chicken Manchurian](https://www.flickr.com/photos/156466858@N02/29649755327) by bradjavernick; licence [by](https://creativecommons.org/licenses/by/2.0/).
+- **Chilli Chicken** — [Free chilli chicken dish image](https://www.rawpixel.com/image/5908257/image-public-domain-leaf-food) by Unknown creator; licence [cc0](https://creativecommons.org/publicdomain/zero/1.0/).

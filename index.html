@@ -97,9 +97,10 @@ const categoryModal=document.getElementById("categoryModal");
 const categoryIcons={"All":"✳","Indian":"🍛","Chinese & Asian":"🥢","Italian":"🍝","Sushi & Asian":"🍣","Mexican":"🌮","Café & Fast Food":"🍔","Café Favourites":"☕","Breakfast & Brunch":"🥞","Soups":"🥣","Snacks & Starters":"🥟","Desserts & Bakery":"🍰","Drinks":"🥤","Healthy & Bowls":"🥗","Seafood":"🦐","Kids":"🧸","Combos & Platters":"🍱","Extras & Add-ons":"➕"};
 const categoryDescriptions={"All":"Every dish, drink and extra in one place.","Indian":"Curries, paneer, breads, thalis, street food and more.","Chinese & Asian":"Indo-Chinese favourites, momos, noodles and wok dishes.","Italian":"Pizza, pasta, sides and Italian comfort food.","Sushi & Asian":"Sushi, Japanese, Korean and Thai favourites.","Mexican":"Tacos, burritos, quesadillas and bowls.","Café & Fast Food":"Burgers, sandwiches, wraps, subs and easy favourites.","Café Favourites":"Toast, coffee-bar bites and premium café picks.","Breakfast & Brunch":"Indian breakfasts, eggs, pancakes and brunch plates.","Soups":"Comforting Indian, continental and Asian soups.","Snacks & Starters":"Fries, small plates, crunchy bites and shareables.","Desserts & Bakery":"Indian sweets, cakes, pastries, cookies and ice cream.","Drinks":"Coffee, tea, cold drinks, shakes, mocktails and juices.","Healthy & Bowls":"Fresh salads, balanced bowls and lighter plates.","Seafood":"Fish, prawns and seafood favourites.","Kids":"Smaller portions and kid-friendly classics.","Combos & Platters":"Meal combinations and sharing platters.","Extras & Add-ons":"Toppings, sides, dips and custom extras."};
 function renderCategoryPicker(){
- const counts=new Map();for(const d of dishes)counts.set(d.cat,(counts.get(d.cat)||0)+1);
+ const availableDishes=dishes.filter(d=>d.imageStatus!=="no-match");
+ const counts=new Map();for(const d of availableDishes)counts.set(d.cat,(counts.get(d.cat)||0)+1);
  const cats=["All",...counts.keys()];
- document.getElementById("categoryGrid").innerHTML=cats.map(cat=>{const count=cat==="All"?dishes.length:counts.get(cat);const icon=categoryIcons[cat]||"🍽️";const desc=categoryDescriptions[cat]||"Explore this part of our menu.";return '<button class="category-option" type="button" data-category-choice="'+escapeHtml(cat)+'"><span class="category-icon">'+icon+'</span><span class="category-copy"><strong>'+escapeHtml(cat==="All"?"All menu":cat)+'</strong><small>'+escapeHtml(desc)+'</small></span><span class="category-count">'+count+'</span></button>'}).join("");
+ document.getElementById("categoryGrid").innerHTML=cats.map(cat=>{const count=cat==="All"?availableDishes.length:counts.get(cat);const icon=categoryIcons[cat]||"🍽️";const desc=categoryDescriptions[cat]||"Explore this part of our menu.";return '<button class="category-option" type="button" data-category-choice="'+escapeHtml(cat)+'"><span class="category-icon">'+icon+'</span><span class="category-copy"><strong>'+escapeHtml(cat==="All"?"All menu":cat)+'</strong><small>'+escapeHtml(desc)+'</small></span><span class="category-count">'+count+'</span></button>'}).join("");
 }
 function openCategoryPicker(){renderCategoryPicker();categoryModal.classList.add("open");categoryModal.setAttribute("aria-hidden","false");document.body.style.overflow="hidden"}
 function closeCategoryPicker(){categoryModal.classList.remove("open");categoryModal.setAttribute("aria-hidden","true");document.body.style.overflow=""}
@@ -122,7 +123,7 @@ function photoCreditMarkup(d){
 }
 function renderMenu(){
  document.querySelectorAll('[data-diet]').forEach(b=>{const active=b.dataset.diet===activeDiet;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});
- let items=dishes.filter(d=>(activeCat==='All'||d.cat===activeCat)&&(activeDiet==='all'||d.diet===activeDiet));
+ let items=dishes.filter(d=>d.imageStatus!=="no-match"&&(activeCat==='All'||d.cat===activeCat)&&(activeDiet==='all'||d.diet===activeDiet));
  if(searchQuery){const q=searchQuery.toLowerCase();items=items.filter(d=>(d.name+' '+d.cat+' '+d.section+' '+d.subcategory+' '+d.keywords).toLowerCase().includes(q))}
  const visible=items.slice(0,visibleCount);
  document.getElementById("menuTitle").textContent=activeCat==="All"?"Made to make you happy.":activeCat;
@@ -154,7 +155,7 @@ function bubble(txt,who){let el=document.createElement("div");el.className="bubb
 function menuContextFor(question){
  const recent=chatHistory.slice(-5).map(m=>m.text).join(" ")+" "+question;
  const terms=(recent.toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>w.length>2&&!["the","and","for","with","what","which","that","this","you","can","are","have","from","want","some","please","tell","about","more"].includes(w));
- const scored=dishes.map(d=>{const hay=(d.name+" "+d.cat+" "+d.section+" "+d.subcategory+" "+d.keywords).toLowerCase();let score=0;for(const term of terms){if(hay.includes(term))score+=term.length>4?3:1}if(/\b(non.?veg|chicken|fish|seafood|prawn|egg)\b/i.test(recent)&&d.diet==="nonveg")score+=2;if(/\b(veg|vegetarian|vegan)\b/i.test(recent)&&d.diet==="veg")score+=2;return {d,score}}).sort((a,b)=>b.score-a.score);
+ const scored=dishes.filter(d=>d.imageStatus!=="no-match").map(d=>{const hay=(d.name+" "+d.cat+" "+d.section+" "+d.subcategory+" "+d.keywords).toLowerCase();let score=0;for(const term of terms){if(hay.includes(term))score+=term.length>4?3:1}if(/\b(non.?veg|chicken|fish|seafood|prawn|egg)\b/i.test(recent)&&d.diet==="nonveg")score+=2;if(/\b(veg|vegetarian|vegan)\b/i.test(recent)&&d.diet==="veg")score+=2;return {d,score}}).sort((a,b)=>b.score-a.score);
  let chosen=scored.filter(x=>x.score>0).slice(0,30).map(x=>x.d);
  if(chosen.length<12){const seenGroups=new Set(chosen.map(d=>d.cat));for(const d of dishes){if(chosen.length>=24)break;if(!chosen.some(x=>x.id===d.id)&&(!seenGroups.has(d.cat)||chosen.length<12)){chosen.push(d);seenGroups.add(d.cat)}}}
  return chosen.slice(0,30).map(d=>({name:d.name,category:d.cat,section:d.section,subcategory:d.subcategory,price:d.price,diet:d.diet,description:d.desc}));

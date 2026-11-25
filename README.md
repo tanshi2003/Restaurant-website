@@ -108,3 +108,15 @@ The repository uses the Openverse public API to search for openly licensed photo
 No API key or payment is required. Openverse rate limits still apply. Some rare or very specific dishes may not have an accurately matched, openly licensed photograph; those are left on a neutral placeholder rather than assigned an unrelated food image. Review every photo and its licence before commercial use. Openverse itself cautions that licence metadata may not always be accurate.
 
 The former paid Pollinations image-generation workflow has been removed. The 125 already-created local AI images are preserved; the remaining menu entries are now handled by the free Openverse workflow.
+
+
+## Image progress and no-match dishes
+
+The **Source free dish photos** GitHub Actions run has a **Summary** tab with the exact live counts:
+- Unique local images ready
+- Total catalogue entries still without a matched image
+- Not searched yet
+- Searched, no suitable openly licensed photo found
+- Visible menu entries after hiding no-match dishes
+
+Dishes marked `no-match` are hidden from the customer-facing category picker, menu results and Olive recommendations. Their records remain in `menu-data.js` with their IDs and `no-match` status, so they can be retried later by enabling the workflow's `retry_no_match` option. When a matching photo is found, the dish automatically returns to the visible menu.

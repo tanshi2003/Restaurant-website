@@ -317,21 +317,26 @@ async function main() {
   await fs.writeFile(ATTRIBUTION_FILE, attributionMarkdown(items));
 
   const ready = items.filter(d => d.imageStatus === "ready").length;
-  const remaining = items.length - ready;
   const notFound = items.filter(d => d.imageStatus === "no-match").length;
+  const notSearched = items.filter(d => d.imageStatus !== "ready" && d.imageStatus !== "no-match").length;
+  const remaining = items.length - ready;
+  const visibleMenu = items.length - notFound;
   const report = [
     "## Free dish photo sourcing progress",
     "",
     "| Measure | Count |",
     "|---|---:|",
-    "| Total menu entries | " + items.length + " |",
-    "| Unique local image files | " + ready + " |",
-    "| Still without a matched photo | " + remaining + " |",
-    "| Marked no suitable result yet | " + notFound + " |",
-    "| Downloaded this run | " + generated + " |",
+    "| Total catalogue entries | " + items.length + " |",
+    "| Unique local images ready | " + ready + " |",
+    "| Total entries still without an image | " + remaining + " |",
+    "| Not searched yet | " + notSearched + " |",
+    "| Searched, no suitable photo found | " + notFound + " |",
+    "| Visible menu entries (excludes no-match) | " + visibleMenu + " |",
+    "| Downloaded in this run | " + generated + " |",
     "| Search/download errors | " + failed + " |",
     "",
-    "Source: Openverse. Allowed licences: CC0, PDM, CC BY and CC BY-SA. No paid image API is used.",
+    "No-match entries are hidden from the customer menu but retained in menu-data.js so they can be retried later.",
+    "Source: Openverse. Filtered to commercially reusable CC0, PDM, CC BY and CC BY-SA images. No paid image API is used.",
     ""
   ].join("\n");
   console.log(report);

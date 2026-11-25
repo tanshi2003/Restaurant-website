@@ -174,6 +174,25 @@ async function main() {
   console.log("Unique local images ready: " + ready + "/" + dishes.length);
   console.log("Still pending: " + pendingAfter);
   console.log("Failed this run: " + failures.length);
+
+  // Surface the same progress in the GitHub Actions run Summary tab.
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    const summary = [
+      "## Dish image generation progress",
+      "",
+      "| Measure | Count |",
+      "|---|---:|",
+      "| Total menu entries | " + dishes.length + " |",
+      "| Unique local images ready | " + ready + " |",
+      "| Still remaining | " + pendingAfter + " |",
+      "| Generated in this run | " + generated + " |",
+      "| Failed in this run | " + failures.length + " |",
+      "",
+      pendingAfter === 0 ? "**All menu images are ready.**" : "**Run the workflow again after fixing any provider or balance errors. Existing images will be skipped.**",
+      ""
+    ].join("\\n");
+    await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, summary);
+  }
   if (fatalError) console.error("Generation stopped by the provider. Check the key, permissions or spending budget, then rerun; existing images will be skipped.");
   const errorFile = path.join(ASSET_DIR, "generation-errors.json");
   if (failures.length) {

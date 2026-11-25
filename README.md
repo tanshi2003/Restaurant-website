@@ -129,3 +129,8 @@ Olive uses the Vercel serverless endpoint `api/chat.js` and Google Gemini. The G
 The endpoint supports `GET /api/chat` as a safe health check. It returns whether the server is deployed and whether the Gemini key is configured, without returning the key. Open `https://restaurant-website.vercel.app/api/chat` in a browser to check it. Expected healthy response has `configured: true`. A `configured: false` result means the Vercel key still needs to be added and the project redeployed.
 
 On the GitHub Pages site, the browser calls `https://restaurant-website.vercel.app/api/chat`. If the actual Vercel project uses a different production domain, set `window.RESTAURANT_CHAT_ENDPOINT` in a small deployment config script to that project's `/api/chat` URL. The chat panel reports connection and API errors instead of hiding every failure behind a generic message.
+
+
+## Vercel deployment for Olive
+
+The project uses the Vercel **Other** framework preset (explicitly set by the root `vercel.json`). Static files are served from the repository root, and `api/chat.mjs` is deployed as the Node.js Web Handler at `/api/chat`. The chat endpoint supports GET health checks and POST Gemini requests. The Gemini key stays in the Vercel server environment as `GEMINI_API_KEY`.

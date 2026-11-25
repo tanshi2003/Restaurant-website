@@ -1,9 +1,5 @@
 name: Generate unique dish photos
 on:
-  push:
-    branches: ["main"]
-    paths:
-      - ".github/workflows/generate-dish-images.yml"
   workflow_dispatch:
     inputs:
       limit:
@@ -37,7 +33,7 @@ jobs:
           POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
           IMAGE_MODEL: black-forest-labs/flux.1-schnell
           IMAGE_CONCURRENCY: "2"
-        run: node scripts/generate-dish-images.cjs --limit "${{ inputs.limit }}"
+        run: node scripts/generate-dish-images.cjs --limit "${{ inputs.limit || '25' }}"
       - name: Commit generated images to main
         if: always()
         env:

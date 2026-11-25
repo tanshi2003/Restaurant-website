@@ -1,5 +1,9 @@
 name: Generate unique dish photos
 on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/generate-dish-images.yml"
   workflow_dispatch:
     inputs:
       limit:

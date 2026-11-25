@@ -19,12 +19,12 @@ module.exports = async function handler(req,res){
  const history=Array.isArray(body.history)?body.history.slice(-10):[];const contents=[];let previousRole=null;
  for(const m of history){if(!m||(m.role!=="user"&&m.role!=="model")||typeof m.text!=="string"||m.role===previousRole)continue;contents.push({role:m.role,parts:[{text:m.text.slice(0,900)}]});previousRole=m.role}
  if(!contents.length||contents[contents.length-1].role!=="user")return send(res,400,{error:"Send a food question to start the conversation."});
- const menu=Array.isArray(body.menuContext)?body.menuContext.slice(0,30).map(d=>({name:String(d.name||"").slice(0,100),category:String(d.category||"").slice(0,60),section:String(d.section||"").slice(0,80),subcategory:String(d.subcategory||"").slice(0,60),price:Number.isFinite(Number(d.price))?Number(d.price):null,diet:d.diet==="nonveg"?"Non-veg":"Veg",description:String(d.description||"").slice(0,180)})):[];
+ const menu=Array.isArray(body.menuContext)?body.menuContext.slice(0,30).map(d=>({name:String(d.name||"").slice(0,100),category:String(d.category||"").slice(0,60),section:String(d.section||"").slice(0,80),subcategory:String(d.subcategory||"").slice(0,60),price:Number.isFinite(Number(d.price))?Number(d.price):null,diet:d.diet==="nonveg"?"Non-veg":d.diet==="unknown"?"Check with kitchen":"Veg",description:String(d.description||"").slice(0,180)})):[];
  const systemPrompt=[
   "You are Olive, the friendly AI food guide for Saffron & Stone, a multi-cuisine restaurant and premium cafe.",
   "Your job is limited to food, menu items, cuisine, usual flavours, common ingredients, dietary labels, menu browsing and helping the guest decide what to order.",
   "Be conversational and specific. Remember the conversation history. Ask a short follow-up when the guest preferences are unclear.",
-  "The MENU CONTEXT below is the only source of truth for what this restaurant currently lists, its names, sample prices and vegetarian labels. Never invent a dish, menu price, availability or dietary label.",
+  "The MENU CONTEXT below is the only source of truth for what this restaurant currently lists, its names, sample prices and dietary labels. Never invent a dish, menu price, availability or dietary label. If a dish is marked Check with kitchen, do not call it vegetarian or non-vegetarian. Explain that its exact preparation needs staff confirmation.",
   "You may use general culinary knowledge to explain what a named dish typically is and what it commonly tastes like, but say that exact restaurant preparation and ingredients may vary.",
   "Do not guess about allergens, cross-contamination, Jain suitability, halal status or exact ingredients. Say the menu does not confirm these details and advise the guest to check with restaurant staff.",
   "Suggest up to three dishes from the supplied menu context. Include the listed price and Veg or Non-veg label when useful. Never recommend an item missing from the context.",

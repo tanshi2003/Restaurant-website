@@ -20,7 +20,7 @@ The optional alcohol bar menu from the source list is not included.
 ## Features
 
 - Cuisine/category browsing, full menu search and incremental show-more loading
-- **All / Veg / Non-veg** dietary filter
+- **All / Veg / Non-veg / Check with kitchen** dietary filter. Items whose names do not establish their ingredients are kept out of the Veg and Non-veg filters until the kitchen confirms them.
 - Shopping bag with quantity controls, subtotal, delivery fee and free-delivery threshold
 - Demo checkout with UPI / QR and cash-on-delivery choices
 - Olive, a multi-turn AI assistant for food details and recommendations
@@ -70,4 +70,4 @@ GitHub Pages can publish the static frontend. The api/chat.js serverless functio
 
 ## Before going live
 
-Replace the sample restaurant identity, address, hours, menu prices and food photography with approved business details. Verify every dietary label and allergen detail with the kitchen. Configure a real payment provider and order-management backend before accepting customer orders.
+Replace the sample restaurant identity, address, hours, menu prices and food photography with approved business details. Verify every dietary label and allergen detail with the kitchen. Items marked Check with kitchen are intentionally not included in either Veg or Non-veg results until confirmed. Configure a real payment provider and order-management backend before accepting customer orders.

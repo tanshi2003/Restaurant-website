@@ -117,7 +117,7 @@ async function searchDish(dish, usedIds, usedHashes) {
   const params = new URLSearchParams({
     q: query,
     license: "cc0,by,by-sa,pdm",
-    license_type: "modification",
+    license_type: "commercial",
     category: "photograph",
     filter_dead: "true",
     mature: "false",

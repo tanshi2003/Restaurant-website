@@ -2,36 +2,41 @@
   {
     "id": 43,
     "name": "Paneer Lababdar",
-    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:12:14.023Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
+    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:19:19.100Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
   },
   {
     "id": 55,
     "name": "Methi Malai Paneer",
-    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:12:38.529Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
+    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:19:19.328Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
   },
   {
     "id": 103,
     "name": "Masala Dosa",
-    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:15:04.783Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
+    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:19:42.499Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
   },
   {
     "id": 106,
     "name": "Butter Masala Dosa",
-    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:15:18.730Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
+    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:19:42.684Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
   },
   {
     "id": 117,
     "name": "Schezwan Dosa",
-    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:15:54.815Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
-  },
-  {
-    "id": 132,
-    "name": "Cheese Uttapam",
-    "error": "Image API returned HTTP 402: {\"success\":false,\"error\":{\"message\":\"Insufficient balance. This request costs about $0.0020, but your available balance is $0.0000. Top up at https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup.\",\"code\":\"INSUFFICIENT_BALANCE\",\"timestamp\":\"2026-11-25T21:16:01.092Z\",\"fixUrl\":\"https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup\"},\"status\":402}"
+    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:20:05.968Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
   },
   {
     "id": 126,
     "name": "Mysore Bonda",
-    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:16:20.001Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
+    "error": "Image API returned HTTP 400: {\"success\":false,\"error\":{\"message\":\"Query parameter validation failed\",\"code\":\"BAD_REQUEST\",\"timestamp\":\"2026-11-25T21:20:06.068Z\",\"details\":{\"name\":\"ValidationError\",\"formErrors\":[],\"fieldErrors\":{\"seed\":[\"Too big: expected number to be <=2147483647\"]}}},\"status\":400}"
+  },
+  {
+    "id": 133,
+    "name": "Mixed Veg Uttapam",
+    "error": "Image API returned HTTP 402: {\"success\":false,\"error\":{\"message\":\"Insufficient balance. This request costs about $0.0020, but your available balance is $0.0000. Top up at https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup.\",\"code\":\"INSUFFICIENT_BALANCE\",\"timestamp\":\"2026-11-25T21:20:06.620Z\",\"fixUrl\":\"https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup\"},\"status\":402}"
+  },
+  {
+    "id": 132,
+    "name": "Cheese Uttapam",
+    "error": "Image API returned HTTP 402: {\"success\":false,\"error\":{\"message\":\"Insufficient balance. This request costs about $0.0020, but your available balance is $0.0000. Top up at https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup.\",\"code\":\"INSUFFICIENT_BALANCE\",\"timestamp\":\"2026-11-25T21:20:06.710Z\",\"fixUrl\":\"https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup\"},\"status\":402}"
   }
 ]

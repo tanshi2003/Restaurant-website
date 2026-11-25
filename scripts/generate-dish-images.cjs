@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+const sharp = require("sharp");
 
 // Creates one AI-generated, dish-specific image file per menu entry.
 // Requires POLLINATIONS_API_KEY. Images are saved locally and referenced by menu-data.js.
@@ -16,6 +17,7 @@ const MODEL = process.env.IMAGE_MODEL || "black-forest-labs/flux.1-schnell";
 const CONCURRENCY = Math.max(1, Math.min(4, Number(process.env.IMAGE_CONCURRENCY || 2)));
 const WIDTH = 640;
 const HEIGHT = 480;
+const JPEG_QUALITY = 78;
 const LIMIT_ARG = process.argv.indexOf("--limit");
 const LIMIT = LIMIT_ARG >= 0 ? Math.max(0, Number(process.argv[LIMIT_ARG + 1] || 0)) : 0;
 
@@ -70,9 +72,10 @@ async function requestImage(dish, attempt) {
     throw error;
   }
   const contentType = response.headers.get("content-type") || "";
-  const extension = extensionFor(contentType);
-  const bytes = Buffer.from(await response.arrayBuffer());
-  if (bytes.length < 4000) throw new Error("Generated image was unexpectedly small (" + bytes.length + " bytes).");
+  const rawBytes = Buffer.from(await response.arrayBuffer());
+  if (rawBytes.length < 4000) throw new Error("Generated image was unexpectedly small (" + rawBytes.length + " bytes).");
+  const bytes = await sharp(rawBytes).rotate().resize(WIDTH, HEIGHT, { fit: "cover", withoutEnlargement: true }).jpeg({ quality: JPEG_QUALITY, mozjpeg: true }).toBuffer();
+  const extension = "jpg";
   const digest = crypto.createHash("sha256").update(bytes).digest("hex");
   return { bytes, extension, digest, seed, prompt };
 }
@@ -172,6 +175,6 @@ async function main() {
   console.log("Failed this run: " + failures.length);
   if (fatalError) console.error("Generation stopped by the provider. Check the key, permissions or spending budget, then rerun; existing images will be skipped.");
   if (failures.length) await fs.writeFile(path.join(ASSET_DIR, "generation-errors.json"), JSON.stringify(failures, null, 2) + "\n");
-  if (generated === 0 && pendingAfter > 0) process.exitCode = 1;
+  if (failures.length || fatalError || (generated === 0 && pendingAfter > 0)) process.exitCode = 1;
 }
 main().catch(error => { console.error(error); process.exit(1); });

@@ -5,9 +5,10 @@ on:
       limit:
         description: "Maximum images to generate in this run (0 = all remaining)"
         required: false
-        default: "0"
+        default: "25"
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: dish-image-generation
   cancel-in-progress: false
@@ -25,6 +26,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Install image optimiser
+        run: npm install --no-save --no-package-lock sharp
       - name: Generate one image per menu entry
         env:
           POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
@@ -38,10 +41,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add menu-data.js assets/dishes
+          git add -A
           if git diff --cached --quiet; then
             echo "No generated image files to commit."
           else
             git commit -m "Add unique AI-generated photos for menu dishes"
             git push origin HEAD:main
+            gh workflow run jekyll-gh-pages.yml --ref main
           fi

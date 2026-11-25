@@ -1,21 +1,26 @@
-name: Generate unique dish photos
+name: Source free dish photos
 on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "Maximum images to generate in this run (0 = all remaining)"
+        description: "Maximum dishes to search in this run (0 = all pending)"
         required: false
         default: "25"
+      retry_no_match:
+        description: "Retry dishes with no match from an earlier run"
+        required: false
+        type: boolean
+        default: false
 permissions:
   contents: write
   actions: write
 concurrency:
-  group: dish-image-generation
+  group: openverse-dish-photo-sourcing
   cancel-in-progress: false
 jobs:
-  generate:
+  source:
     runs-on: ubuntu-latest
-    timeout-minutes: 360
+    timeout-minutes: 120
     steps:
       - name: Check out main
         uses: actions/checkout@v4
@@ -28,25 +33,21 @@ jobs:
           node-version: "22"
       - name: Install image optimiser
         run: npm install --no-save --no-package-lock sharp
-      - name: Generate one image per menu entry
-        env:
-          POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
-          IMAGE_MODEL: black-forest-labs/flux.1-schnell
-          IMAGE_CONCURRENCY: "2"
-        run: node scripts/generate-dish-images.cjs --limit "${{ inputs.limit || '25' }}"
-      - name: Commit generated images to main
+      - name: Search and download openly licensed dish photos
+        run: |
+          node scripts/fetch-free-dish-images.cjs --limit "${{ inputs.limit || '25' }}" ${{ inputs.retry_no_match && '--retry-no-match' || '' }}
+      - name: Commit matched photos, menu data and credits
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- menu-data.js
-          if [ -d assets/dishes ]; then git add -A -- assets/dishes; fi
+          git add -A -- menu-data.js assets/dishes
           if git diff --cached --quiet; then
-            echo "No generated image files to commit."
+            echo "No new matched photos or menu updates to commit."
           else
-            git commit -m "Add unique AI-generated photos for menu dishes"
+            git commit -m "Add openly licensed dish photos and credits"
             git push origin HEAD:main
             gh workflow run jekyll-gh-pages.yml --ref main
           fi

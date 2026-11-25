@@ -1,1007 +1,1132 @@
 {
-  "version": 1,
-  "model": "black-forest-labs/flux.1-schnell",
-  "generatedAt": "2026-11-25T21:45:01.310Z",
+  "version": 2,
+  "source": "Openverse",
   "entries": [
     {
       "id": 1,
       "name": "Butter Chicken",
       "file": "assets/dishes/0001-butter-chicken.jpg",
       "sha256": "2866edc1995c94a09cd853de224cbc0f428cd0d832bec1f46725df901e232f01",
-      "seed": 843754606,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 2,
       "name": "Chicken Tikka Masala",
       "file": "assets/dishes/0002-chicken-tikka-masala.jpg",
       "sha256": "c04c7eceea0568a85dc3767eb64bbff5b5052f648048c7ee008352a6b1172c8a",
-      "seed": 727428985,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 4,
       "name": "Chicken Lababdar",
       "file": "assets/dishes/0004-chicken-lababdar.jpg",
       "sha256": "5f9c9ee901dd04fd6b01aea869c215104117f8f89cc5663815bdff8f9e1bcc57",
-      "seed": 131085117,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 3,
       "name": "Kadai Chicken",
       "file": "assets/dishes/0003-kadai-chicken.jpg",
       "sha256": "9012882e1f557f3fb62579a69572fd86d816cc9ce63857a142674651c7b197cc",
-      "seed": 740659820,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 6,
       "name": "Mutton Rogan Josh",
       "file": "assets/dishes/0006-mutton-rogan-josh.jpg",
       "sha256": "b785ded7f4367da66e875baad1b72eba56ffd3a89777a4085e0ffb7ebdd4af21",
-      "seed": 1846014487,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 7,
       "name": "Mutton Korma",
       "file": "assets/dishes/0007-mutton-korma.jpg",
       "sha256": "e5919480865405dd1858218c125dab46608db352ca3b55a103e0b532260f9380",
-      "seed": 129417989,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 8,
       "name": "Mutton Handi",
       "file": "assets/dishes/0008-mutton-handi.jpg",
       "sha256": "c190da9bdfd2d93b9e55a8d32ad325ca39557c039ede23e3d458c49fcca92fa4",
-      "seed": 937900758,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 9,
       "name": "Dal Makhani",
       "file": "assets/dishes/0009-dal-makhani.jpg",
       "sha256": "6f32e09be5593548328af10f3d9dae0149cd69475420e56aca95a0d5f894495b",
-      "seed": 1267901536,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 10,
       "name": "Dal Tadka",
       "file": "assets/dishes/0010-dal-tadka.jpg",
       "sha256": "b065697a60ded5fc4469e9c54f108143ff38c144506385839780c13a96a35b4c",
-      "seed": 256877519,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 11,
       "name": "Dal Fry",
       "file": "assets/dishes/0011-dal-fry.jpg",
       "sha256": "b6055900cd395341625a057e11e5b108a116d1a4589d1381c59b5f0665fc386c",
-      "seed": 1582844907,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 5,
       "name": "Chicken Handi",
       "file": "assets/dishes/0005-chicken-handi.jpg",
       "sha256": "b24033853d9b78ae91c74526586ecbf834ef5f29b78fd6f4799db561ac551a80",
-      "seed": 378111416,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 13,
       "name": "Chole Masala",
       "file": "assets/dishes/0013-chole-masala.jpg",
       "sha256": "9dcbaa9aec468c94b3731964a4f403f397a9dd57fcd662a25ccaf9539a2ad796",
-      "seed": 593548543,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 14,
       "name": "Punjabi Kadhi",
       "file": "assets/dishes/0014-punjabi-kadhi.jpg",
       "sha256": "c29c251bb5fb5d19bc6897172b3619fa235f59ba70251a4e053c5ed651a37c2a",
-      "seed": 196365290,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 15,
       "name": "Aloo Gobi",
       "file": "assets/dishes/0015-aloo-gobi.jpg",
       "sha256": "a22d6ee062d01bf51f179aa12899a081f22cd346c5951cd5295281bbb3643e0e",
-      "seed": 78324294,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 16,
       "name": "Dum Aloo",
       "file": "assets/dishes/0016-dum-aloo.jpg",
       "sha256": "7e703490215fa49eb269d1bdbc80a96e247d7ecf8fa182276c0db525e5ca2bc5",
-      "seed": 992175574,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 17,
       "name": "Baingan Bharta",
       "file": "assets/dishes/0017-baingan-bharta.jpg",
       "sha256": "3236c066b85448903c981089de62ce40ce270afc9d7ccdf9fdc170bc23662722",
-      "seed": 2032497775,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 18,
       "name": "Bhindi Masala",
       "file": "assets/dishes/0018-bhindi-masala.jpg",
       "sha256": "cb56937ebb123cd2e3ff7550fd94fbff27349932c8bbbb0f393c1fb4bfc235bd",
-      "seed": 1784783427,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 12,
       "name": "Rajma Masala",
       "file": "assets/dishes/0012-rajma-masala.jpg",
       "sha256": "6f9a334a5b392fb409f6302819269487177e8a0083ba8d970bf0e1462c53d0ed",
-      "seed": 23392659,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 19,
       "name": "Mix Veg",
       "file": "assets/dishes/0019-mix-veg.jpg",
       "sha256": "326f58ee4906f058406b0de1172e733355094e27e38c46cd7b8e3b47c216d8b7",
-      "seed": 1846909699,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 20,
       "name": "Veg Kolhapuri",
       "file": "assets/dishes/0020-veg-kolhapuri.jpg",
       "sha256": "a17b3a63c1e4ed030644fdda6de46658aa58ab1af7cc411d677c7cb54fa2045e",
-      "seed": 586550423,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 21,
       "name": "Navratan Korma",
       "file": "assets/dishes/0021-navratan-korma.jpg",
       "sha256": "e961d0eec608c52ecdfa0435e82ff6ff0983296431c8dd3671ec5d85018d0058",
-      "seed": 1365200790,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 22,
       "name": "Malai Kofta",
       "file": "assets/dishes/0022-malai-kofta.jpg",
       "sha256": "5c4f1363c1c276ddc0e216256a9c2e5d198efd4921e2feb2d9e63855ddeb6594",
-      "seed": 1428110804,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 23,
       "name": "Shahi Kofta",
       "file": "assets/dishes/0023-shahi-kofta.jpg",
       "sha256": "4ded98543495764c4e69c7c4285bd543c047d612ee1a5025cbb68469507f9469",
-      "seed": 596276578,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 24,
       "name": "Palak Corn",
       "file": "assets/dishes/0024-palak-corn.jpg",
       "sha256": "955b65c0084912730092e28b3559116f172b9ba3281575816d13836e4ee2b082",
-      "seed": 1636085286,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 25,
       "name": "Steamed Rice",
       "file": "assets/dishes/0025-steamed-rice.jpg",
       "sha256": "15213ef0edc1e3b9d6fa2d8244224486618e55ce9355db741975716d1ea7d7a4",
-      "seed": 2001221004,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 26,
       "name": "Jeera Rice",
       "file": "assets/dishes/0026-jeera-rice.jpg",
       "sha256": "d6deb42b891465e5d1539cef7ae2ddf56672998a777c3fff40d362ae965d5307",
-      "seed": 1344442590,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 28,
       "name": "Veg Pulao",
       "file": "assets/dishes/0028-veg-pulao.jpg",
       "sha256": "3e5437fa3035525d2f517b818a128ad4f27217f00afb6ae4c4fac756bb3b141b",
-      "seed": 523022410,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 27,
       "name": "Peas Pulao",
       "file": "assets/dishes/0027-peas-pulao.jpg",
       "sha256": "7581894dea82dff6ffdc30ffa33669ff8aeee13accf1881036cc9c36adea48a7",
-      "seed": 122706226,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 30,
       "name": "Chicken Pulao",
       "file": "assets/dishes/0030-chicken-pulao.jpg",
       "sha256": "f517cb84e40244d1465c7de3f602781b7c85ab37b595a554de6f88eaab289bbe",
-      "seed": 1920187488,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 29,
       "name": "Kashmiri Pulao",
       "file": "assets/dishes/0029-kashmiri-pulao.jpg",
       "sha256": "1551869e9a87bac361a7a88b51efc64f3b038567b53e33a9cea5434ce03d79ee",
-      "seed": 186854071,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 31,
       "name": "Mutton Pulao",
       "file": "assets/dishes/0031-mutton-pulao.jpg",
       "sha256": "c3af50276e49f1b1d0b124787516570ac267e96130c55e9eb88abdb4b58892ae",
-      "seed": 1787457050,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 32,
       "name": "North Indian Veg Thali",
       "file": "assets/dishes/0032-north-indian-veg-thali.jpg",
       "sha256": "799246b5a379316ea7e431ef9150f704e5301b6a8f23ef4b58d3b6d93b059e41",
-      "seed": 1347411011,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 33,
       "name": "Deluxe Veg Thali",
       "file": "assets/dishes/0033-deluxe-veg-thali.jpg",
       "sha256": "843fb6d92e65ba46b5bca597bdd7caab04c44109b377d371fa634f5c34101630",
-      "seed": 24745258,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 35,
       "name": "Rajasthani Thali",
       "file": "assets/dishes/0035-rajasthani-thali.jpg",
       "sha256": "9ab0cc8105b44398873c34cdc1d3513c7afd139603b0f46ac121c000d38ddd60",
-      "seed": 1970983293,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 36,
       "name": "Chicken Thali",
       "file": "assets/dishes/0036-chicken-thali.jpg",
       "sha256": "44a12b9ee32aadf8f3447d95c6619ca02ac9e1306a8df5f1834c4019bc7af4b7",
-      "seed": 1759890092,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 37,
       "name": "Maharaja Thali",
       "file": "assets/dishes/0037-maharaja-thali.jpg",
       "sha256": "d5724b4ab91ef92c59c131da22d384b2081326f144d7227742b7c8d2997e8513",
-      "seed": 2056061735,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 38,
       "name": "Mini Thali",
       "file": "assets/dishes/0038-mini-thali.jpg",
       "sha256": "b4e5b837c8afc066963c814f9a65df14f46015c51ede860e278baabd29cc8435",
-      "seed": 535802422,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 34,
       "name": "Punjabi Thali",
       "file": "assets/dishes/0034-punjabi-thali.jpg",
       "sha256": "2c1c5bcc1c37380443b970544ef7fcfa7e0caa980f579b2d9693f86a05490c7d",
-      "seed": 2126936985,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 39,
       "name": "Paneer Butter Masala",
       "file": "assets/dishes/0039-paneer-butter-masala.jpg",
       "sha256": "d23c716e827f3ab723db4a10d851518b6754d4052cb5ad4d9ed4475d3c07e479",
-      "seed": 912570064,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 41,
       "name": "Shahi Paneer",
       "file": "assets/dishes/0041-shahi-paneer.jpg",
       "sha256": "e1ee66c846a2cb0469feaa7b88674d2c3c2eeb0d989c3876f9692b6db298cd47",
-      "seed": 1548104126,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 42,
       "name": "Kadai Paneer",
       "file": "assets/dishes/0042-kadai-paneer.jpg",
       "sha256": "30e88544777c2756a536e04ce2f001d75817cafadb4ded84b03d8c83da5d2013",
-      "seed": 937260221,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 40,
       "name": "Paneer Butter Masala (Dhaba Style)",
       "file": "assets/dishes/0040-paneer-butter-masala-dhaba-style.jpg",
       "sha256": "99688894a0787a2efbba8387b24efcb8f9d3eda4ba85e970e294b68c9bbc3857",
-      "seed": 1557573631,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 44,
       "name": "Paneer Tikka Masala",
       "file": "assets/dishes/0044-paneer-tikka-masala.jpg",
       "sha256": "fc2ab3a501378062e09ed61321ef22d28b04b1fd7f429e595a81a15df24eb094",
-      "seed": 2089226591,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 45,
       "name": "Paneer Do Pyaza",
       "file": "assets/dishes/0045-paneer-do-pyaza.jpg",
       "sha256": "fb9df4d24961d7a414278b8c3c34b6b2194ec7c248f075c0ab498f3400905519",
-      "seed": 905846934,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 46,
       "name": "Paneer Bhurji",
       "file": "assets/dishes/0046-paneer-bhurji.jpg",
       "sha256": "7d6187a7062b5d5ff8ff36fb418c75eea1321f8e458013102a7ee56ca1074763",
-      "seed": 1628009738,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 47,
       "name": "Paneer Handi",
       "file": "assets/dishes/0047-paneer-handi.jpg",
       "sha256": "64edd38949d8b255d66b37477f57c9fe2025de3c8dbb658934e5643af13e2fc3",
-      "seed": 2057706779,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 48,
       "name": "Paneer Angara",
       "file": "assets/dishes/0048-paneer-angara.jpg",
       "sha256": "2ab8bf3b80e1b6a89f494ab20645bb3628c1bff86177eb07bd70119fc864b3b0",
-      "seed": 781906971,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 50,
       "name": "Paneer Makhani",
       "file": "assets/dishes/0050-paneer-makhani.jpg",
       "sha256": "65dfcf9193da105326d83ec72c06a68fc1f122c13bbd4b32c2950d5083f45ffa",
-      "seed": 1394574834,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 49,
       "name": "Paneer Kolhapuri",
       "file": "assets/dishes/0049-paneer-kolhapuri.jpg",
       "sha256": "f537b9e05fb87488b3e156614bb17740ed61c2a210573784bf8f1c8ff455350b",
-      "seed": 1770768048,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 51,
       "name": "Paneer Pasanda",
       "file": "assets/dishes/0051-paneer-pasanda.jpg",
       "sha256": "3e70e098a3a16b8284809f69951670655059eb14748293239f85c217aaf7bbc7",
-      "seed": 610724413,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 52,
       "name": "Paneer Korma",
       "file": "assets/dishes/0052-paneer-korma.jpg",
       "sha256": "b970f972d55c9ebf99b1e2f1c03c229ac0a18cc252bd1128ab159dab8244aeca",
-      "seed": 1409469750,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 53,
       "name": "Achari Paneer",
       "file": "assets/dishes/0053-achari-paneer.jpg",
       "sha256": "af02542bec126c90eb0f6bac1e519579c165c94475a3ae10f332dd2ef08b0d9a",
-      "seed": 751998029,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 54,
       "name": "Palak Paneer",
       "file": "assets/dishes/0054-palak-paneer.jpg",
       "sha256": "a7b4e4d6a62bc8208759b27b93197599b8f91711044b51a28a73f904cfea1522",
-      "seed": 1749604093,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 56,
       "name": "Paneer Jalfrezi",
       "file": "assets/dishes/0056-paneer-jalfrezi.jpg",
       "sha256": "94982ae3952b7efceb24dc5ad12dc9e159c9a8eb1b69b725985d248050ab7a04",
-      "seed": 3251976,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 57,
       "name": "Paneer Hyderabadi",
       "file": "assets/dishes/0057-paneer-hyderabadi.jpg",
       "sha256": "cd5ef0e3cec2ff4bdb95b96e74a1af9756f7f1c2c0bb37abac4c995d090438ae",
-      "seed": 1765848199,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 58,
       "name": "Paneer Kali Mirch",
       "file": "assets/dishes/0058-paneer-kali-mirch.jpg",
       "sha256": "86376ca57b5908bcdc2cbd6d022e04a8f4ec3cb39e31528078767bc97179aae4",
-      "seed": 961208518,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 59,
       "name": "Paneer Chatpata",
       "file": "assets/dishes/0059-paneer-chatpata.jpg",
       "sha256": "307cb64c805488e224cff8b8bff43f20a3fec05253d2d046fe727923a0b29f53",
-      "seed": 999352158,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 61,
       "name": "Paneer Masala",
       "file": "assets/dishes/0061-paneer-masala.jpg",
       "sha256": "4210fd867643f2c48992216bbb7ea453be841a2e33f98a7433f06e272c8ff757",
-      "seed": 1571927892,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 62,
       "name": "Paneer Rogan Josh Style",
       "file": "assets/dishes/0062-paneer-rogan-josh-style.jpg",
       "sha256": "97148e44518c6e4506d2cd10ecd8d3c7ce5ed3f0fed2b9e6747bb01af5ec1224",
-      "seed": 624390549,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 63,
       "name": "Paneer Malai Kofta",
       "file": "assets/dishes/0063-paneer-malai-kofta.jpg",
       "sha256": "ddf54afc94934cf8f4a0bc59420d41783f743a8abc4e4fc070596197dcea695d",
-      "seed": 1626692938,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 60,
       "name": "Paneer Mughlai",
       "file": "assets/dishes/0060-paneer-mughlai.jpg",
       "sha256": "b321b01f32f6658e502c6bd00b7630564f57ce544e9411163dc49ae862069c45",
-      "seed": 1589887883,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 65,
       "name": "Paneer Chilli (Indian Style)",
       "file": "assets/dishes/0065-paneer-chilli-indian-style.jpg",
       "sha256": "765fff1eb2f198d84b2143e008fb34d784a727538a953d0e939483f2ee33909f",
-      "seed": 358615109,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 66,
       "name": "Tandoori Paneer",
       "file": "assets/dishes/0066-tandoori-paneer.jpg",
       "sha256": "e2a12411a54e4a4a6eb0ed2015191086ad1dbe065e2dfafb4778d04ce3a856a6",
-      "seed": 1518538008,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 67,
       "name": "Paneer Tikka",
       "file": "assets/dishes/0067-paneer-tikka.jpg",
       "sha256": "05b86efaa86ea0edd3737be594f239253cfbef0bf07a42ef1ffb09d960542503",
-      "seed": 498442301,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 64,
       "name": "Paneer 65",
       "file": "assets/dishes/0064-paneer-65.jpg",
       "sha256": "f5a15dc6bc47d631e3af0aee1536db96389d835878f397ae8d9d0e302f40aaaa",
-      "seed": 1041284233,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 68,
       "name": "Malai Paneer Tikka",
       "file": "assets/dishes/0068-malai-paneer-tikka.jpg",
       "sha256": "6297c7e01df5019b728f009982371dde46b33cc55063a81cb1e6152af014c590",
-      "seed": 895317188,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 70,
       "name": "Afghani Paneer Tikka",
       "file": "assets/dishes/0070-afghani-paneer-tikka.jpg",
       "sha256": "be0b835833c017229a7dbe3e895746bfc7c42e836543f2c8e7f666606dfe1c28",
-      "seed": 10860418,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 71,
       "name": "Plain Naan",
       "file": "assets/dishes/0071-plain-naan.jpg",
       "sha256": "b211e41fce0a758dd2238357803b9c70094123445ca44817b58c93a4b5cff00b",
-      "seed": 1326976587,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 72,
       "name": "Butter Naan",
       "file": "assets/dishes/0072-butter-naan.jpg",
       "sha256": "e5fb3032633ead274f99fa4fe2c1a07cc37ab3b3e2d655cde3c44ddb7ee4100b",
-      "seed": 618518762,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 73,
       "name": "Garlic Naan",
       "file": "assets/dishes/0073-garlic-naan.jpg",
       "sha256": "a0f71f6689c9502107a5571e812edbd19337d0d317679bc245825ca10a9af33c",
-      "seed": 1404245305,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 74,
       "name": "Cheese Naan",
       "file": "assets/dishes/0074-cheese-naan.jpg",
       "sha256": "9c96321434a616b98fa420f53ee4fe4115c658f3891be526371d58b611132cf5",
-      "seed": 372700602,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 75,
       "name": "Cheese Garlic Naan",
       "file": "assets/dishes/0075-cheese-garlic-naan.jpg",
       "sha256": "ff866953da46faade2a27b7a2c3b4df0e60df844d03a3b2dc023823eb8d9d600",
-      "seed": 894123026,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 69,
       "name": "Achari Paneer Tikka",
       "file": "assets/dishes/0069-achari-paneer-tikka.jpg",
       "sha256": "2778ab6d32ff85c71cfe63020eff19f30082a6d8ef7962f4806eb78021754509",
-      "seed": 1979607565,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 77,
       "name": "Paneer Naan",
       "file": "assets/dishes/0077-paneer-naan.jpg",
       "sha256": "238874d90fc2c62c05636b302a3b69a135b94ad83bfe149bec13b303ddb04581",
-      "seed": 1339072591,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 78,
       "name": "Peshawari Naan",
       "file": "assets/dishes/0078-peshawari-naan.jpg",
       "sha256": "6c8f3be0fcca160ca9db61c2cdaacd8bfcbf914ec27315ef3e87ddb2cb4728c8",
-      "seed": 2028765567,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 76,
       "name": "Stuffed Naan",
       "file": "assets/dishes/0076-stuffed-naan.jpg",
       "sha256": "b51bd7df8b03a336d11a7860d4738b6b32aa8f9c039f9bb30aba8bbf0e0355a5",
-      "seed": 1184184140,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 80,
       "name": "Amritsari Naan",
       "file": "assets/dishes/0080-amritsari-naan.jpg",
       "sha256": "8e905e3f6c34bc9a82d2067636c9ecaa28a9328aed581fa44bb5022aea8af15c",
-      "seed": 233661310,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 81,
       "name": "Tandoori Roti",
       "file": "assets/dishes/0081-tandoori-roti.jpg",
       "sha256": "8d7ce8737e0933fc2ac1bc5f488f6f5a1a145a4b949fe6039455564999dac73f",
-      "seed": 388965568,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 82,
       "name": "Butter Tandoori Roti",
       "file": "assets/dishes/0082-butter-tandoori-roti.jpg",
       "sha256": "4f58b29aa80098f06726b7c151b83a48b60f677ffbdf66b14ef4eb4dff641313",
-      "seed": 563997599,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 83,
       "name": "Missi Roti",
       "file": "assets/dishes/0083-missi-roti.jpg",
       "sha256": "7a3e46bb6d393c8e18112daf0ae2fdfcf3ed32a09688a1bd8b9bc227f3a66ce2",
-      "seed": 990323949,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 84,
       "name": "Roomali Roti",
       "file": "assets/dishes/0084-roomali-roti.jpg",
       "sha256": "62499fd116d0c1196353be2ff8027d5a3517751b9ecd23b1b510e7365868960e",
-      "seed": 961247867,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 85,
       "name": "Bajra Roti",
       "file": "assets/dishes/0085-bajra-roti.jpg",
       "sha256": "17a3a565ba1732c6552d2e7747e1a52065675bf07d0c829465284a7b355d433f",
-      "seed": 1508983581,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 86,
       "name": "Makki Ki Roti",
       "file": "assets/dishes/0086-makki-ki-roti.jpg",
       "sha256": "faa548021fc7941e1ded3b1619bdb21fadac0ea8f24ea31cd7f1af02c9c561a1",
-      "seed": 2098746265,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 87,
       "name": "Plain Paratha",
       "file": "assets/dishes/0087-plain-paratha.jpg",
       "sha256": "381c2f30eec3b050a6812b3d067a210f331fcee721e51420b9d97d85401220c7",
-      "seed": 1617395734,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 79,
       "name": "Kashmiri Naan",
       "file": "assets/dishes/0079-kashmiri-naan.jpg",
       "sha256": "50286124c98b148bbb4f43303cd7f7cda3dcded793a3f258360369699b69c4b3",
-      "seed": 1961939817,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 89,
       "name": "Aloo Paratha",
       "file": "assets/dishes/0089-aloo-paratha.jpg",
       "sha256": "c01610879ead2c52b44db20b13ed1c1d652f84cc27c44d2d6f911cd17795d422",
-      "seed": 2114328742,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 88,
       "name": "Lachha Paratha",
       "file": "assets/dishes/0088-lachha-paratha.jpg",
       "sha256": "efaa7da895d499a1b41d408cce674c230ea8dbfde0af355dfb7f6f4627aae88b",
-      "seed": 1968064255,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 91,
       "name": "Gobi Paratha",
       "file": "assets/dishes/0091-gobi-paratha.jpg",
       "sha256": "e3be30561f8ec36b8fda80959cef8878b7dd7e17c62697b06bf0b49eb34f103c",
-      "seed": 970358204,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 92,
       "name": "Onion Paratha",
       "file": "assets/dishes/0092-onion-paratha.jpg",
       "sha256": "2a41858f70768fd32f8229f02ac4d43f2cd7f990feb3896a39e2873a9b1d17b6",
-      "seed": 801893032,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 93,
       "name": "Mix Paratha",
       "file": "assets/dishes/0093-mix-paratha.jpg",
       "sha256": "40aa22c556b0d5903c37f71c6dcf17d622d353fff01bb3b570474b432cfaaa75",
-      "seed": 315548234,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 94,
       "name": "Cheese Paratha",
       "file": "assets/dishes/0094-cheese-paratha.jpg",
       "sha256": "71e0554a8915efcdfb364568789fd48c3ef28e112eb728e264b47a7710bc6e55",
-      "seed": 34571069,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 90,
       "name": "Paneer Paratha",
       "file": "assets/dishes/0090-paneer-paratha.jpg",
       "sha256": "a86d777160ce69e453782295626b5c6f6f16b16ffc9207d94a96e7a896ad897c",
-      "seed": 1349260687,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 96,
       "name": "Ajwain Paratha",
       "file": "assets/dishes/0096-ajwain-paratha.jpg",
       "sha256": "ad591c6752af2717dc11974583268ba75baa490361525a7ec8e6fff60450ae52",
-      "seed": 1658010128,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 97,
       "name": "Kulcha",
       "file": "assets/dishes/0097-kulcha.jpg",
       "sha256": "cf40f30ddf5fa094602e48a0aaa88de168e80f7210fa5bb452d25daffda94a2a",
-      "seed": 1056454953,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 98,
       "name": "Butter Kulcha",
       "file": "assets/dishes/0098-butter-kulcha.jpg",
       "sha256": "cdc55719e11ba7f2f5b1e1a517c72250cecaba413e0c08e52725d39e407c9f72",
-      "seed": 170214100,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 99,
       "name": "Amritsari Kulcha",
       "file": "assets/dishes/0099-amritsari-kulcha.jpg",
       "sha256": "e3ede50677da094adafe05f4eaab1281e893cdb1193ed8d5e706bd7a38c2bad3",
-      "seed": 936793536,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 100,
       "name": "Chur Chur Naan",
       "file": "assets/dishes/0100-chur-chur-naan.jpg",
       "sha256": "ff96c5c0774b70a205018d4c70e5e7b87b2ecb1aeb214e2c302d154e08bb89d3",
-      "seed": 805454951,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 101,
       "name": "Chur Chur Paratha",
       "file": "assets/dishes/0101-chur-chur-paratha.jpg",
       "sha256": "164821a8feb90e314c54e08c66edbf7aaff8e411a1623adb61bcd52f4ceb8f3b",
-      "seed": 200805160,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 95,
       "name": "Mooli Paratha",
       "file": "assets/dishes/0095-mooli-paratha.jpg",
       "sha256": "58883cff5226df3a17b3ace6b6f0ae4aa8ea461f0daab1af384e0f63d8b0e5a0",
-      "seed": 1981668958,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 102,
       "name": "Plain Dosa",
       "file": "assets/dishes/0102-plain-dosa.jpg",
       "sha256": "d803af037e5f927de59ee441c7609c736ab5fedcd0b52f6b1a1da10eaddda49b",
-      "seed": 189639328,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 104,
       "name": "Mysore Masala Dosa",
       "file": "assets/dishes/0104-mysore-masala-dosa.jpg",
       "sha256": "1f373265f1f816913bb7d28a1082857c421e6fd26cc3e21f3de566d1ad15586c",
-      "seed": 705260531,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 105,
       "name": "Mysore Plain Dosa",
       "file": "assets/dishes/0105-mysore-plain-dosa.jpg",
       "sha256": "16f9e48d60cb51fcaeec7a6785eddace273fa42d561ec17616c09f43a152de67",
-      "seed": 1251790773,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 108,
       "name": "Paper Dosa",
       "file": "assets/dishes/0108-paper-dosa.jpg",
       "sha256": "41f7f3f3e24797a96a73739b1b87a183d41d1671a18c8694f0566c78b9e481a8",
-      "seed": 24609604,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 109,
       "name": "Rava Dosa",
       "file": "assets/dishes/0109-rava-dosa.jpg",
       "sha256": "6d817f7f9d078ac44e167f2247d61033d147b3edf039be908ec845bdf7bef4d9",
-      "seed": 1297183793,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 110,
       "name": "Onion Rava Dosa",
       "file": "assets/dishes/0110-onion-rava-dosa.jpg",
       "sha256": "e628268d93e7408d30ff0426eef8115c0b0c11cc8e9b5f32e99f05b50480913d",
-      "seed": 1344922141,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 111,
       "name": "Cheese Dosa",
       "file": "assets/dishes/0111-cheese-dosa.jpg",
       "sha256": "ccfd2f49495e4f146db8510929cebd7093c92d9bfa3dd0cfd227c796a71b8971",
-      "seed": 1612800230,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 107,
       "name": "Ghee Roast Dosa",
       "file": "assets/dishes/0107-ghee-roast-dosa.jpg",
       "sha256": "b93c06f1be2586f863863d75e30b5d431de9ee20d56622359100de2ab48da63d",
-      "seed": 1402355746,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 113,
       "name": "Mysore Cheese Dosa",
       "file": "assets/dishes/0113-mysore-cheese-dosa.jpg",
       "sha256": "c4c69963dac4ba26c10c3f3b5f4d1b47fe0ea9e9400e5fc9855f28fa7d73b37f",
-      "seed": 1337024417,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 114,
       "name": "Set Dosa",
       "file": "assets/dishes/0114-set-dosa.jpg",
       "sha256": "33f96577fd43b950035340a5baa583d197469b149859ce7f38b75a6a22143316",
-      "seed": 780997615,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 115,
       "name": "Neer Dosa",
       "file": "assets/dishes/0115-neer-dosa.jpg",
       "sha256": "0ae402dd196e5363f2d4222090de42d285bfeb53545585da75708b5178176caf",
-      "seed": 1868580021,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 116,
       "name": "Podi Dosa",
       "file": "assets/dishes/0116-podi-dosa.jpg",
       "sha256": "f47797229001b92205add99364668417c62abdfd998debb07c71dfd334b64676",
-      "seed": 487651310,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 112,
       "name": "Paneer Dosa",
       "file": "assets/dishes/0112-paneer-dosa.jpg",
       "sha256": "b27af9db6f9f8d9defb9ff972b7fff1afad1d75cb92e43e7f7214aa0b774c107",
-      "seed": 2088381775,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 118,
       "name": "Chocolate Dosa",
       "file": "assets/dishes/0118-chocolate-dosa.jpg",
       "sha256": "716d220cb6a0286a4ccdaac05a3e7f47bce3e9b4b03f8c9f2f0342063e103011",
-      "seed": 1903446636,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 119,
       "name": "Plain Idli",
       "file": "assets/dishes/0119-plain-idli.jpg",
       "sha256": "7f855873f385c09e2b00ddc90c8ea5129932b67e86eae7eceee12352e7587e5e",
-      "seed": 1058033429,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 120,
       "name": "Rava Idli",
       "file": "assets/dishes/0120-rava-idli.jpg",
       "sha256": "cf0b46c8a8d2ee130c7bb7d719e7fdb27ba8b6c562283c35cd07eaecb0108194",
-      "seed": 521263291,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 121,
       "name": "Mini Idli",
       "file": "assets/dishes/0121-mini-idli.jpg",
       "sha256": "c6ae5026b9679aebc969508590312436aa88292464a45c232676ef9f05feeca4",
-      "seed": 1305393763,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 122,
       "name": "Fried Idli",
       "file": "assets/dishes/0122-fried-idli.jpg",
       "sha256": "cd77ba369c90bdc4658ad4892ddf96523d51d6626ae88fdf2d3827434765c05b",
-      "seed": 1692109402,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 123,
       "name": "Sambar Idli",
       "file": "assets/dishes/0123-sambar-idli.jpg",
       "sha256": "41da5f3e05fa0bbf2728e3e66c49866df63027beeced18c1e733960fa3af632c",
-      "seed": 76400544,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 125,
       "name": "Masala Vada",
       "file": "assets/dishes/0125-masala-vada.jpg",
       "sha256": "98b0601200e3d91ba135c5010eaae2d484c9d330eb760a3d28171e922cdd380c",
-      "seed": 899808677,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 124,
       "name": "Medu Vada",
       "file": "assets/dishes/0124-medu-vada.jpg",
       "sha256": "c6ce9aaca22f2d7d30b4ca293b6f9043874c3eadd4ee6bdcf251eb64fa6cd8bc",
-      "seed": 1530809076,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 127,
       "name": "Idli Vada Combo",
       "file": "assets/dishes/0127-idli-vada-combo.jpg",
       "sha256": "c92abee2ee2ce27d761863d76486eae0777ec1200cba94448b6675121ef54c81",
-      "seed": 1570611598,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 128,
       "name": "Plain Uttapam",
       "file": "assets/dishes/0128-plain-uttapam.jpg",
       "sha256": "d5f5bae20c5e9b2e78375fa4dbe1b7c19746e12985c333f494c46dca011a9aeb",
-      "seed": 363373103,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 129,
       "name": "Onion Uttapam",
       "file": "assets/dishes/0129-onion-uttapam.jpg",
       "sha256": "818aafc87d960e85746d35fd7d4816e792f80db72e1e1bbd43ee8f3f090fb249",
-      "seed": 870379720,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 130,
       "name": "Tomato Uttapam",
       "file": "assets/dishes/0130-tomato-uttapam.jpg",
       "sha256": "ab27df1f1d95dc8b64526a881c6a464af87cf8f07b658ca00b61487b2f1b3b6f",
-      "seed": 436906577,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     },
     {
       "id": 131,
       "name": "Onion Tomato Uttapam",
       "file": "assets/dishes/0131-onion-tomato-uttapam.jpg",
       "sha256": "6eb663b36245c23aa858f4ffe6ae067e22246b053ad9fac8cfaed4f67dd3b57b",
-      "seed": 979961039,
-      "model": "black-forest-labs/flux.1-schnell"
+      "model": "black-forest-labs/flux.1-schnell",
+      "license": "AI-generated",
+      "creator": "AI-generated"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-25T22:00:19.045Z"
 }

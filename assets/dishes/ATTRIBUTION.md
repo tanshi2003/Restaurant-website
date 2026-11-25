@@ -1,0 +1,131 @@
+# Dish image credits
+
+125 existing local images were generated previously and are labelled as AI-generated. New photographs sourced through Openverse will be credited below with their individual source page and licence.
+
+Openverse makes openly licensed media searchable, but advises users to verify each work's licence details before reuse.
+
+- **Butter Chicken** — AI-generated image.
+- **Chicken Tikka Masala** — AI-generated image.
+- **Chicken Lababdar** — AI-generated image.
+- **Kadai Chicken** — AI-generated image.
+- **Mutton Rogan Josh** — AI-generated image.
+- **Mutton Korma** — AI-generated image.
+- **Mutton Handi** — AI-generated image.
+- **Dal Makhani** — AI-generated image.
+- **Dal Tadka** — AI-generated image.
+- **Dal Fry** — AI-generated image.
+- **Chicken Handi** — AI-generated image.
+- **Chole Masala** — AI-generated image.
+- **Punjabi Kadhi** — AI-generated image.
+- **Aloo Gobi** — AI-generated image.
+- **Dum Aloo** — AI-generated image.
+- **Baingan Bharta** — AI-generated image.
+- **Bhindi Masala** — AI-generated image.
+- **Rajma Masala** — AI-generated image.
+- **Mix Veg** — AI-generated image.
+- **Veg Kolhapuri** — AI-generated image.
+- **Navratan Korma** — AI-generated image.
+- **Malai Kofta** — AI-generated image.
+- **Shahi Kofta** — AI-generated image.
+- **Palak Corn** — AI-generated image.
+- **Steamed Rice** — AI-generated image.
+- **Jeera Rice** — AI-generated image.
+- **Veg Pulao** — AI-generated image.
+- **Peas Pulao** — AI-generated image.
+- **Chicken Pulao** — AI-generated image.
+- **Kashmiri Pulao** — AI-generated image.
+- **Mutton Pulao** — AI-generated image.
+- **North Indian Veg Thali** — AI-generated image.
+- **Deluxe Veg Thali** — AI-generated image.
+- **Rajasthani Thali** — AI-generated image.
+- **Chicken Thali** — AI-generated image.
+- **Maharaja Thali** — AI-generated image.
+- **Mini Thali** — AI-generated image.
+- **Punjabi Thali** — AI-generated image.
+- **Paneer Butter Masala** — AI-generated image.
+- **Shahi Paneer** — AI-generated image.
+- **Kadai Paneer** — AI-generated image.
+- **Paneer Butter Masala (Dhaba Style)** — AI-generated image.
+- **Paneer Tikka Masala** — AI-generated image.
+- **Paneer Do Pyaza** — AI-generated image.
+- **Paneer Bhurji** — AI-generated image.
+- **Paneer Handi** — AI-generated image.
+- **Paneer Angara** — AI-generated image.
+- **Paneer Makhani** — AI-generated image.
+- **Paneer Kolhapuri** — AI-generated image.
+- **Paneer Pasanda** — AI-generated image.
+- **Paneer Korma** — AI-generated image.
+- **Achari Paneer** — AI-generated image.
+- **Palak Paneer** — AI-generated image.
+- **Paneer Jalfrezi** — AI-generated image.
+- **Paneer Hyderabadi** — AI-generated image.
+- **Paneer Kali Mirch** — AI-generated image.
+- **Paneer Chatpata** — AI-generated image.
+- **Paneer Masala** — AI-generated image.
+- **Paneer Rogan Josh Style** — AI-generated image.
+- **Paneer Malai Kofta** — AI-generated image.
+- **Paneer Mughlai** — AI-generated image.
+- **Paneer Chilli (Indian Style)** — AI-generated image.
+- **Tandoori Paneer** — AI-generated image.
+- **Paneer Tikka** — AI-generated image.
+- **Paneer 65** — AI-generated image.
+- **Malai Paneer Tikka** — AI-generated image.
+- **Afghani Paneer Tikka** — AI-generated image.
+- **Plain Naan** — AI-generated image.
+- **Butter Naan** — AI-generated image.
+- **Garlic Naan** — AI-generated image.
+- **Cheese Naan** — AI-generated image.
+- **Cheese Garlic Naan** — AI-generated image.
+- **Achari Paneer Tikka** — AI-generated image.
+- **Paneer Naan** — AI-generated image.
+- **Peshawari Naan** — AI-generated image.
+- **Stuffed Naan** — AI-generated image.
+- **Amritsari Naan** — AI-generated image.
+- **Tandoori Roti** — AI-generated image.
+- **Butter Tandoori Roti** — AI-generated image.
+- **Missi Roti** — AI-generated image.
+- **Roomali Roti** — AI-generated image.
+- **Bajra Roti** — AI-generated image.
+- **Makki Ki Roti** — AI-generated image.
+- **Plain Paratha** — AI-generated image.
+- **Kashmiri Naan** — AI-generated image.
+- **Aloo Paratha** — AI-generated image.
+- **Lachha Paratha** — AI-generated image.
+- **Gobi Paratha** — AI-generated image.
+- **Onion Paratha** — AI-generated image.
+- **Mix Paratha** — AI-generated image.
+- **Cheese Paratha** — AI-generated image.
+- **Paneer Paratha** — AI-generated image.
+- **Ajwain Paratha** — AI-generated image.
+- **Kulcha** — AI-generated image.
+- **Butter Kulcha** — AI-generated image.
+- **Amritsari Kulcha** — AI-generated image.
+- **Chur Chur Naan** — AI-generated image.
+- **Chur Chur Paratha** — AI-generated image.
+- **Mooli Paratha** — AI-generated image.
+- **Plain Dosa** — AI-generated image.
+- **Mysore Masala Dosa** — AI-generated image.
+- **Mysore Plain Dosa** — AI-generated image.
+- **Paper Dosa** — AI-generated image.
+- **Rava Dosa** — AI-generated image.
+- **Onion Rava Dosa** — AI-generated image.
+- **Cheese Dosa** — AI-generated image.
+- **Ghee Roast Dosa** — AI-generated image.
+- **Mysore Cheese Dosa** — AI-generated image.
+- **Set Dosa** — AI-generated image.
+- **Neer Dosa** — AI-generated image.
+- **Podi Dosa** — AI-generated image.
+- **Paneer Dosa** — AI-generated image.
+- **Chocolate Dosa** — AI-generated image.
+- **Plain Idli** — AI-generated image.
+- **Rava Idli** — AI-generated image.
+- **Mini Idli** — AI-generated image.
+- **Fried Idli** — AI-generated image.
+- **Sambar Idli** — AI-generated image.
+- **Masala Vada** — AI-generated image.
+- **Medu Vada** — AI-generated image.
+- **Idli Vada Combo** — AI-generated image.
+- **Plain Uttapam** — AI-generated image.
+- **Onion Uttapam** — AI-generated image.
+- **Tomato Uttapam** — AI-generated image.
+- **Onion Tomato Uttapam** — AI-generated image.

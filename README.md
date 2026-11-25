@@ -93,3 +93,18 @@ The repository includes a resumable GitHub Actions image generator. It creates o
 The default model is FLUX.1 Schnell at 640 × 480, then images are resized and compressed to JPEG (quality 78) before they are committed. The workflow uses a unique prompt and seed for each item and rejects identical image files. AI image generation is not guaranteed to reproduce every recipe perfectly, so review the resulting menu photos before using them commercially. Generated assets are AI-created and should be reviewed for accuracy.
 
 **Cost note:** 1,089 separate images require 1,089 generation calls. The total charge depends on the live model price and your Pollinations account. The workflow does not run until you manually trigger it with your secret configured. It commits each completed batch to `main` and triggers the GitHub Pages deployment. It will stop if the provider rejects requests because of an exhausted budget or key permissions.
+
+## Free dish image sourcing (no paid API)
+
+The repository uses the Openverse public API to search for openly licensed photographs. Openverse permits anonymous API access, subject to rate limits. The downloader filters to CC0, Public Domain Mark, CC BY and CC BY-SA photographs, and searches by the exact menu-item name. It downloads unique images, records the creator/source/licence, and stores the credit list at `assets/dishes/ATTRIBUTION.md`.
+
+### Run an image batch
+
+1. Open **Actions → Source free dish photos**.
+2. Select the `main` branch and run the workflow. The default batch is 25 dishes.
+3. Open the run's **Summary** tab to see how many images were found, how many still need images, and how many had no suitable result.
+4. Repeat batches to process the remaining dishes. To retry dishes previously marked with no matching result, choose the `retry_no_match` option.
+
+No API key or payment is required. Openverse rate limits still apply. Some rare or very specific dishes may not have an accurately matched, openly licensed photograph; those are left on a neutral placeholder rather than assigned an unrelated food image. Review every photo and its licence before commercial use. Openverse itself cautions that licence metadata may not always be accurate.
+
+The former paid Pollinations image-generation workflow has been removed. The 125 already-created local AI images are preserved; the remaining menu entries are now handled by the free Openverse workflow.

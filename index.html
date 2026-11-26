@@ -50,6 +50,25 @@
 .chathead small{cursor:pointer;opacity:.9}.chathead small[data-state='online']{color:#d8f2d7}.chathead small[data-state='setup']{color:#ffe4ae}.chathead small[data-state='offline']{color:#ffd0c9}
 .bubble.error{background:#fff1ee;border:1px solid #f0c8bf;color:#873d31;max-width:95%}
 .chatinput button:disabled,.quick button:disabled{opacity:.5;cursor:wait}
+
+/* Visual cleanup: keep the restaurant identity, remove excess effects. */
+:root{--shadow:0 6px 22px rgba(37,42,30,.08)}
+.announcement{letter-spacing:.025em}
+.nav{backdrop-filter:none;background:var(--paper)}
+.cartbtn:hover,.primary:hover,.chatfab:hover{transform:none}
+.stamp{transform:none;box-shadow:none;width:94px;height:94px;font-size:14px}
+.dish{transition:border-color .18s}
+.dish:hover{transform:none;box-shadow:0 6px 22px rgba(37,42,30,.08)}
+.dishimg img,.dish:hover img{transition:none;transform:none}
+.story{border-radius:14px}
+.chatfab,.chatbox,.modalbox,.category-dialog{box-shadow:0 8px 26px rgba(37,42,30,.12)}
+.chatfab:hover{transform:none}
+.reveal{opacity:1;transform:none;transition:none}
+.reveal.visible{opacity:1;transform:none}
+.category-dialog{border-radius:14px}
+.category-option{border-radius:10px;transition:border-color .15s}
+.category-option:hover,.category-option:focus-visible{transform:none;box-shadow:none}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 </style>
 </head>
 <body>
